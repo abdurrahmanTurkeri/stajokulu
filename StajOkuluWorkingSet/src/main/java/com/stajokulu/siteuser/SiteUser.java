@@ -2,6 +2,7 @@ package com.stajokulu.siteuser;
 
 
 import java.io.Serializable;
+import java.util.Comparator;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +14,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 
 @Table(name = "SiteUser")
 @Entity
-public class SiteUser implements Serializable {
+public class SiteUser implements Serializable,Comparable<SiteUser> ,Comparator<SiteUser>{
 
     public SiteUser(String id, String userName, String firstName, String lastName, String email, String mobilePhone) {
         this.id = id;
@@ -120,6 +121,20 @@ public class SiteUser implements Serializable {
     public void setPasswordMatch(String passwordMatch) {
         this.passwordMatch = passwordMatch;
     }
+
+    @Override
+    public int compareTo(SiteUser o) {
+        return new Integer(compare(this, o));
+    
+    }
+
+    @Override
+    public int compare(SiteUser o1, SiteUser o2) {
+    
+       return o1.getUserName().compareTo(o2.getUserName());
+    }
+
+   
     
     
     

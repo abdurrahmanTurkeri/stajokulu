@@ -2,6 +2,7 @@ com/stajokulu/rest/UserRestService.class
 com/stajokulu/siteuser/SiteUser_.class
 com/stajokulu/rest/ApplicationConfig.class
 com/stajokulu/siteuser/SiteUser.class
+com/stajokulu/rest/AccessControlResponseFilter.class
 com/stajokulu/service/UserService.class
 com/stajokulu/service/UserServiceImpl.class
 com/stajokulu/controller/UserManagedBean.class

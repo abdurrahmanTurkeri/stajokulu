@@ -36,7 +36,8 @@ public class UserRestService {
     @Path("/getir")
     @Produces(MediaType.APPLICATION_JSON)
     public List<SiteUser> getUserList(){
-        return userService.listOfUser();
+         List<SiteUser> userList=userService.listOfUser();
+        return userList;
     }
     
 }
