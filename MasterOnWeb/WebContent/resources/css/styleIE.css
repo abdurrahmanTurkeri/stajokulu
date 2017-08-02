@@ -1,0 +1,20 @@
+.main_menu > li > ul{
+    display: none;
+    position: absolute;
+    border-top: 5px solid #1abc9c;
+    background-color: #ffffff;
+    /* overflow: hidden; */
+    margin: 0;
+    -webkit-border-radius: 2px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 2px;
+    -moz-background-clip: padding;
+    border-radius: 2px;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25);
+    -moz-box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25);
+    box-shadow: 0 1px 2px rgba(71, 73, 72, 0.25);
+    /* color: @arguments; */
+    z-index: 1000;
+    min-width: 200px;
+}
