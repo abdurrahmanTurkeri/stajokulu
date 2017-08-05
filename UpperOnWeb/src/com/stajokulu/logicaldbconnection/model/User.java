@@ -1,13 +1,30 @@
 package com.stajokulu.logicaldbconnection.model;
 
-public class User {
+public class User{
 
 	private String firstName;
 	private String lastName;
 	private int age;
 	private String emailAddress;
 	private String password;
+	private int idUser;
 	
+	
+	public User() {
+		super();
+	}
+
+
+	public User(String firstName, String lastName, String ageStr, String emailAddress, String password) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = Integer.parseInt(ageStr);
+		this.emailAddress = emailAddress;
+		this.password = password;
+	}
+	
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -38,6 +55,18 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+
+	public int getIdUser() {
+		return idUser;
+	}
+
+
+	public void setIdUser(int idUser) {
+		this.idUser = idUser;
+	}
+	
+	
 	
 	
 	

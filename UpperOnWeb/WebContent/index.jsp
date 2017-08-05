@@ -16,7 +16,9 @@
         UserService user = new UserService();
         List<User> userList = user.fetchAllUser();
     %>
+    <%@include file="include/menu.jsp" %>
 	<div class="container">
+	
 		<table class="table">
 			<thead>
 				<tr>
@@ -24,6 +26,9 @@
 					<th>First Name</th>
 					<th>Last Name</th>
 					<th>Email</th>
+					<th>Password</th>
+					<th>Age</th>
+					<th>Action</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -35,6 +40,11 @@
 					<th scope="row"><%=usertemp.getFirstName()%></th>
 					<td><%=usertemp.getLastName()%></td>
 					<td><%=usertemp.getEmailAddress()%></td>
+					<td><%=usertemp.getPassword()%></td>
+					<td><%=usertemp.getAge()%></td>
+					<td><a href="update.jsp?guncellenecekEleman=<%=usertemp.getIdUser() %>" class="btn btn-primary" role="button">Güncelle</a>
+					<a href="delete.jsp?silinecekEleman=<%=usertemp.getIdUser() %>" class="btn btn-danger" role="button">Sil</a>
+					</td>
 				</tr>
 				<%
 					}

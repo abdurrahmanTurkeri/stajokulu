@@ -7,7 +7,7 @@
 	<classpathentry kind="lib" path="C:/Users/Dg Teknik Arşiv/Downloads/translate/libs/httpclient-4.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dg Teknik Arşiv/Downloads/translate/libs/httpcore-4.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dg Teknik Arşiv/Downloads/translate/libs/jetty-6.1.26.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Dg Teknik Arşiv/Downloads/translate/libs/transaction-api-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/libs/mysql-connector-java-5.1.43/mysql-connector-java-5.1.43/mysql-connector-java-5.1.43-bin.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dg Teknik Arşiv/Downloads/translate/libs/google-api-client-gson-1.22.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dg Teknik Arşiv/Downloads/translate/libs/google-api-client-1.22.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dg Teknik Arşiv/Downloads/translate/libs/google-api-client-android-1.22.0.jar"/>
