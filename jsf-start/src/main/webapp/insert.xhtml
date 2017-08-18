@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            input{
+                /**
+                background: red!important;
+                **/
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:messages id="messages"/>
+            <p:inputText  value="#{loginManagedBean.userTable.firstName}" required="true" requiredMessage="Kontrol et" placeholder="FirstName"/>
+            <p:inputText  value="#{loginManagedBean.userTable.lastName}" placeholder="LastName"/>
+            <p:inputText  value="#{loginManagedBean.userTable.email}" placeholder="Email"/>
+            <p:inputText  value="#{loginManagedBean.userTable.password}" placeholder="Password"/>
+            <p:commandButton value="Kaydet" actionListener="#{loginManagedBean.saveUser()}"
+                             update="userListTable messages"/>
+            
+            <p:dataTable value="#{loginManagedBean.userList}" var="user" id="userListTable">
+                <p:column headerText="UserName">
+                    #{user.id}
+                </p:column>
+                <p:column headerText="FirstName">
+                    #{user.firstName}
+                </p:column>
+                <p:column headerText="LastName">
+                    #{user.lastName}
+                </p:column>
+                <p:column headerText="Email">
+                    #{user.email}
+                </p:column>
+                <p:column headerText="Password">
+                    #{user.password}
+                </p:column>
+               
+            </p:dataTable>
+            
+        </h:form>
+    </h:body>
+</html>
+
